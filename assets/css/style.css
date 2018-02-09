@@ -1,0 +1,9 @@
+body, header, #backGround {
+	background-image: url(../images/crystal-bg.jpg);
+	background-size: cover;
+}
+
+img{
+	height: 200px;
+	width: 200px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>crystal game</title>
+  </head>
+  <body>
+      <div class="jumbotron jumbotron-fluid text-center" id="backGround">
+        <header class="display-1">
+          The Crystal Game
+        </header>
+        <p class="h3">
+          <button type="button" class="btn btn-outline-dark" id="reset">Click to Start</button>
+          <button type="button" class="btn btn-outline-dark" id="instructions">Click for Instructions</button>
+          <p id="hide" style="display: none">Try to make your guess equal the random number by clicking the crystals. Each crystal is worth a different amount each round.</p>
+
+        </p>
+
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 text-center h2 text-light">
+            <p>
+              Guess The Random Number By Clicking The Crystals:
+            </p>
+            <p id="randomNumber">
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="assets/images/crystal-1.jpeg" alt="Crystal-1" class="img rounded float-left crystal1">
+          </div>
+          <div class="col-lg-3">
+            <img src="assets/images/crystal-2.jpeg" alt="Crystal-2" class="img rounded float-left crystal2">
+          </div>
+          <div class="col-lg-3">
+            <img src="assets/images/crystal-3.jpeg" alt="Crystal-3" class="img rounded float-left crystal3">
+          </div>
+          <div class="col-lg-3">
+            <img src="assets/images/crystal-4.jpeg" alt="Crystal-4" class="img rounded float-left crystal4">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="h2 text-center text-light">Your Guess: <span id="yourGuess"></span></p>
+
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="h3 text-center text-light">Wins: <span id="wins"></span></p>
+
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="h3 text-center text-light">Losses: <span id="losses"></span></p>
+
+          </div>
+        </div>
+      </div>
+
+    <script src="assets/javascript/game.js"></script>
+  </body>
+</html>
