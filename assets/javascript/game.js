@@ -7,11 +7,11 @@
 $(document).ready(function() {
 
   // variables
-  var randomNumber;
-  var crystalOne;
-  var crystalTwo;
-  var crystalThree;
-  var crystalFour;
+  var randomNumber = 0;
+  var crystalOne = 0;
+  var crystalTwo = 0;
+  var crystalThree = 0;
+  var crystalFour = 0;
   var userGuess = 0;
   var wins = 0;
   var losses = 0;
@@ -27,7 +27,7 @@ $(document).ready(function() {
     crystalFour = Math.floor(Math.random() * (12 - 1 + 1) ) + 1;
     $('#randomNumber').text(randomNumber);
     $('#yourGuess').text(userGuess);
-  };
+  }
 
   function gameWin() {
     if (userGuess === randomNumber) {
@@ -35,7 +35,7 @@ $(document).ready(function() {
       $('#wins').text(wins);
       startUp();
     }
-  };
+  }
 
   function gameLose() {
     if (userGuess >= randomNumber) {
@@ -43,7 +43,7 @@ $(document).ready(function() {
       $('#losses').text(losses);
       startUp();
     }
-  };
+  }
 
   // on click events
   $('#instructions').on('click', function () {
